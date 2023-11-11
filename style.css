@@ -1,7 +1,70 @@
 /*
   folha de estilo site one page HTML5e CSS3 feita por Diego teixeira da Silva
 */
+/* importado do google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+.container{
+  margin: 0 auto;
+  background-color: blue;
+
+}
 
 body{
     background-color: brown;
+}
+
+
+@media  (min-width: 576px){
+  body{
+    background-color: aquamarine;
+  }
+
+  .container{
+    max-width: 540px;
+  }
+}
+
+@media  (min-width: 768px){
+    body{
+      background-color: rgb(133, 127, 255);
+
+}
+  .container{
+  max-width: 720px;
+}
+}
+
+@media  (min-width: 992px){
+  body{
+    background-color: rgb(255, 242, 127);
+  }
+  .container {
+    max-width: 960px;
+  
+}
+}
+
+
+@media  (min-width: 1200px){
+  body{
+    background-color: rgb(255, 127, 127);
+  }
+  .container{
+    max-width: 1140px;
+  }
 }
