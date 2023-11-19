@@ -32,6 +32,17 @@ body{
   background-color: #a9a9a9; **/
 }
 
+/* configuraçoes do botão saiba mais classe criada em index. html linha 36 */
+.Botao {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 700;
+  background-color: #c00000;
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+}
 /** topo do site feito em index.html coluna 84**/
 
 #topo{
@@ -89,7 +100,30 @@ nav ul li a {
   right: 0;
 }
 /*--------------------------------------------------------------------------*/
+/** para dar destque linha 36 index.html**/
+main {
+  height: 75vh;
+  background:  url(image/banner.jpg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 
+  /** linhas 102 ate 105 são responsaveis por centralizar  
+  as linhas 34, 35, e 36 de index.html 
+  no caso o botão saiba mais e os outros dizeres**/
+}
+main h1 {
+  font: 2.5em;
+}
+main h2 {
+  font-size: 1em;
+  margin: 20px 0px 50px 0px;
+}
+
+/**---------------------------------------------------------------**/
 
 /** smartphone landscape**/
 
@@ -104,6 +138,12 @@ body{
   .container{
     max-width: 540px;
   }
+
+
+ /** destaque **/
+ main h1, main h2 {
+  text-shadow: #000 0.05em 0.05em 0.05em;
+ }
 }
 /*------------------------------------------------------------------------*/
 /** tablet portrait**/
@@ -113,8 +153,19 @@ body{
     max-width: 720px;
   }
 
-}
 
+ /* destaque  */
+
+ main {
+  height: 45vh;
+ }
+ main h1 {
+  font-size: 5.5em;
+ }
+ main h2 {
+  font-size: 2em;
+ }
+}
 /*-----------------------------------------------------------------------*/
 /** tablet landscape **/
 @media  (min-width: 992px){
@@ -122,7 +173,14 @@ body{
   .container {
     max-width: 960px;
   }
-}/**-------------------------------------------------------------------------**/
+
+ /* destaque  */
+
+ main {
+  height: 70vh;
+ }
+}
+/**-------------------------------------------------------------------------**/
 
 /** pc **/
 @media  (min-width: 1200px){
@@ -132,32 +190,32 @@ body{
   }
 
 
-header {
-height: 180px;
-}
+ header {
+ height: 180px;
+ }
 
-label {
+ label {
   display: none;
-}
+ }
 
-nav ul {
+ nav ul {
   position: static;
   height: auto;
   background-color: transparent;
   margin-top: 50px;
-}
+ }
 
-nav ul li {
+ nav ul li {
   float: left;
   border: 0;
-}
+ }
 
-nav ul li a {
+ nav ul li a {
   color: #343538;
-}
+ }
 
-/** este muda a cor ao passar o mouse sobre as palavras do menu **/
-nav ul li a:hover {
+ /** este muda a cor ao passar o mouse sobre as palavras do menu **/
+ nav ul li a:hover {
   color: #c00000;
-}
+ }
 }
