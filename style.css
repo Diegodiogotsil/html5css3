@@ -36,6 +36,11 @@ body{
   align-items: center;
 }
 
+.Flex3{
+  display: flex;
+  flex-direction: column;
+}
+
 .TopicosSobre {
   margin-bottom: 10px;
 }
@@ -160,6 +165,34 @@ main h2 {
 #textoSobre h2 {
   margin-bottom: 10px;
 }
+
+.TopicosSobre {
+  margin-top: 20px;
+}
+
+.TopicosSobre img {
+  margin-right: 10px;
+}   
+
+/* one page */
+#onepage {
+  padding: 50px 10px;
+}
+
+#onepage h2 {
+  margin-bottom: 10px;
+}
+
+#onepage p {
+  margin-bottom: 25px;
+}
+
+#video iframe {
+  width: 340px;
+  height: 191px;
+  border: 0;
+}
+
 /**---------------------------------------------------------------**/
 
 /** smartphone landscape**/
@@ -181,6 +214,14 @@ body{
  main h1, main h2 {
   text-shadow: #000 0.05em 0.05em 0.05em;
  }
+
+ /* one page */
+
+ #video iframe {
+  width: 560px;
+  height: 315px;
+}
+
 }
 /*------------------------------------------------------------------------*/
 /** tablet portrait**/
@@ -270,4 +311,11 @@ body{
   border-radius: 50%;
   margin-right: 50px;
  }  
+
+ /* configura parte do one page */
+
+ .Flex3 {
+  flex-direction: row;
+  align-items: center;
+ }
 }
