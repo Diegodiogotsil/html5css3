@@ -41,6 +41,23 @@ body{
   flex-direction: column;
 }
 
+.Flex4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.Flex5 {
+  display: flex;
+  flex-direction: column-reverse;
+
+}
+
+.Flex6 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; /** faz os iten de contato no rodape como o telefone email e endereço ficarem em coluna um em cima do outro, para pc e diferente fica um do lado do outro**/
+}
+
 .TopicosSobre {
   margin-bottom: 10px;
 }
@@ -67,6 +84,40 @@ body{
   right: 10px;
   bottom: 10px;
 
+}
+/* cartoes de conteudo html5 boxmodel breakponts*/
+
+.Card {
+  margin-top: 25px;
+  width: 338px;
+  height: 520px;
+  background-color: #e8e8e8;
+  border: 1px solid #a1a1a1;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* para arredondar a imagem dos cartões  no caso border radius*/
+
+.Card img {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+  margin-top: 15px;
+}
+
+.Card p {
+  text-align: left;
+  color: #434343;
+  padding: 10px 30px 50px 30px;
+}
+
+/* para mudar as configurações do botão saiba + dos cards */
+
+.Card a {
+  padding: 10px 100px;
+  border: 0;
 }
 /** esmartphone portrait**/
 
@@ -224,6 +275,72 @@ main h2 {
 #qrcode {
   display: none;
 }
+
+/* conteudo */
+
+#conteudo {
+  padding: 50px 0px;
+}
+
+#conteudo h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#todos {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#todos a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+/* rodapé */
+address {
+  padding: 35px 10px 50px 10px;
+  background: url(image/background2.png);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+address a {
+  text-decoration: none;
+  color: #fff;
+}
+
+address img {
+  padding-top: 15px;
+}
+
+#iconeLocal {
+  display: none;
+}
+
+#dados {
+  margin: 30px 0px 15px 0px;
+}
+
+#googleMaps {
+  display: none;
+
+}
+
+footer {
+  padding: 50;
+  background-color: #343538;
+  color: #fff;
+  text-align: center;
+}
+
+#social {
+  margin-bottom: 25px;
+
+}
 /**---------------------------------------------------------------**/
 
 /** smartphone landscape**/
@@ -251,6 +368,16 @@ body{
  #video iframe {
   width: 560px;
   height: 315px;
+}
+
+/** rodape **/
+.Flex5 {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#social {
+  margin: 0px;
 }
 
 }
@@ -367,5 +494,22 @@ body{
   height: 225px;
  }
 
+ /** rodapé **/
+
+ #iconeLocal {
+  display: inline;
+ }
+
+ #iconeMapa {
+  display: none;
+ }
+ 
+ #googleMaps {
+  display: inline;
+ }
+
+ .Flex6 {
+  flex-direction: row-reverse; /** este item fara com que se inverta as posiçoes, por exemplo o mapa do google no fim da pagina estava a direita, foi colocado para esquerda **/
+ }
 
 }
