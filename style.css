@@ -77,7 +77,7 @@ body{
   border: 2px solid #fff;
   border-radius: 25px;
 }
-/** topo do site feito em index.html coluna 84**/
+/** topo do site nada mais e do que o botão que ao chegar no fim da tela se clicado te leva ao começo**/
 
 #topo{
   position: fixed;
