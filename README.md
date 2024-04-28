@@ -1,5 +1,5 @@
-# html5 e css3
-Aprenda HTML5 e CSS3 de forma simples e pratica e simples e a criar um site responsivo.
+# html5 e css3 site moderno e responsivo
+ HTML5 e CSS3 de forma simples e pratica e criar um site moderno responsivo.
 ## links indicados
 ### Planejamento
 [cetic](https://www.cetic.br/)
